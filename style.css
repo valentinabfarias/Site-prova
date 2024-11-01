@@ -1,0 +1,357 @@
+/* Retirar as Margens e paddings padrão do CSS */
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Barra de Navegação */
+nav {
+
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    padding: 20px 0;
+    background: linear-gradient(
+        to bottom,
+        #000 0%,
+        #000 80%,
+        #cd0000 80%,
+        #cd0000 100%
+      );
+
+}
+/* Barra de Navegação Lista */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+
+
+}
+
+nav ul li a {
+
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+   
+
+}
+/* Animação Barra de navegação */
+nav ul li a:hover {
+    color: red;
+
+}
+
+hr {
+    width: 100%;
+    color: red;
+
+}
+
+header hr {
+    position: fixed;
+    top: 7.9%;
+    background-color: red;
+    color: red;
+    height: 10px;
+    border: none;
+}
+/* Margin separando a Landing do conteudo principal */
+.principal{
+    margin-top: 95px;
+}
+/* Padronizando todas as imagens */
+.contimage{
+    height: 300px;
+    width: 400px;
+    margin: 0px 20px;
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* Padronizando os titulos */
+h1,
+h2 {
+    text-align: center;
+    margin: 20px 0px;
+
+
+}
+/* Padronizando o Container */
+.container {
+    margin: 0px 250px; 
+    display: flex; 
+    font-size: 18px;
+    padding: 25px;
+    background-color: #f4fafa;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+/* Configuração da Tabela */
+table,
+td,
+th {
+
+
+    margin: 40px 150px;
+    padding: 20px;
+    text-align: center;
+}
+
+tr {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 10px;
+
+
+}
+
+table {
+    border-collapse: collapse;
+
+}
+
+thead {
+    background-color: aqua;
+
+}
+/* Configuração do Formulario */
+form {
+    margin: 20px 250px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 25px;
+    background-color: #f4fafa;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+
+}
+
+input,
+textarea {
+    margin: 20px 190px;
+    padding: 5px;
+}
+/* Configuração do Botão */
+button {
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(78, 243, 78);
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    color: white;
+    font-size: 20px;
+
+    transition: background-color 0.5s; 
+    transition: scale 0.5s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(47, 219, 47);
+    scale: 1.2;
+}
+
+footer {
+
+    text-align: center;
+    padding: 10px;
+    background-color: aqua;
+}
+/* Configuração dos inputs do formulário */
+#nome,
+#email,
+#comment {
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+/* Configuração da area de comentario */
+textarea,
+input::placeholder {
+    text-align: center;
+}
+
+p{
+    word-spacing: 4px;
+}
+#inicio{
+    height: 100vh;
+    background: url(https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 78px;
+}
+#inicio img{
+    display: block;
+    margin: auto;
+    width: 350px;
+}
+#inicio hr{
+    color: black;
+    background-color: black;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+}
+#inicio button{
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+}
+#inicio p{
+    margin: 25px 350px;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+
+
+   
+
+    
+        @media(max-width: 900px){
+            body{
+                max-height: 400px;
+            }
+            #inicio{
+                height: 100vh;
+                
+            }
+                .container{
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+            }
+            #inicio h1{
+                text-align: center;
+                margin: 0px 0px;
+                font-size: 30px;
+                
+            
+            }
+            #inicio img{
+                width: 100px;
+                display: block;
+                margin: auto;
+                padding: 30px 0;
+                
+               
+            
+            }
+            #inicio hr{
+                width: 50%;
+                display: block;
+                margin: auto;
+            }
+            #inicio h2{
+                font-size: 20px;
+                margin: 50px 0px;
+                text-align: center;
+            }
+        
+        .principal img{
+            max-width: 250px;
+            margin-top: 10px;
+        }
+        #inicio p{
+            font-size: 20px;
+            margin: 50px 0px;
+            text-align: center;
+            
+        }
+        .table{
+            display: none;
+        }
+form{
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 25px;
+    background-color: #f4fafa;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+}
+input,
+textarea {
+    margin: 20px 0px;
+    padding: 5px;
+}
+#atable{
+    display: none;
+}
+nav {
+
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    padding: 15px 0;
+    background: linear-gradient(
+        to bottom,
+        #000 0%,
+        #000 80%,
+        #cd0000 80%,
+        #cd0000 100%
+      );
+
+}
+/* Barra de Navegação Lista */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 8px;
+
+
+}
+
+nav ul li a {
+
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+#inicio img{
+width: 250px;
+
+}
+    
+    
+            
+
+        
+
+    
+        
+
+        }
+
+
+
+        
